@@ -12,18 +12,129 @@
    Filename: br_styles.css
 
 */
-
+/* This sets up the background gradient */
 html {
-    background-color: blue;
-
-
+    background: linear-gradient(345deg, rgb(167, 134, 95), rgb(15, 13, 10));
 }
 
+/* This sets up the font family the sizing and the start of my grid and the color of the text */
 body {
-    background-image: url('br_paper.png');
+
     font-family: 'Courier New', Courier, monospace;
     min-width: 500px;
     max-width: 1200px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 70% 10%;
+    height: 100%;
+    color: rgb(211, 192, 170);
+}
+
+header {
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 100%;
+}
+
+#header_pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: right;
+    background: url(br_paper.png);
+}
+
+#nav {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
+    border: 5px groove rgb(179, 172, 102);
+    margin-bottom: 1.2em;
+    box-shadow: rgb(0, 0, 0) 4px -4px 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(96, 87, 70);
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+a:link,
+a:visited {
+    color: rgb(182, 132, 47);
+}
+
+#nav a:hover,
+#nav a:active {
+    background-color: rgb(62, 56, 45);
+}
+
+a:hover,
+a:active {
+    background-color: rgb(62, 56, 45);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1%;
+    text-shadow: rgb(97, 79, 51) 2px -2px 5px;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: radial-gradient(circle closest-corner at 50% 50%,
+        rgb(131, 98, 67),
+        rgb(53, 42, 25), rgb(155, 118, 87));
+}
+
+article {
+    grid-template-columns: 80% 20%;
+
+}
+
+article p {
+    float: left;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+}
+
+aside {
+    float: right;
+}
+
+footer {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
+    border: 5px groove rgb(179, 172, 102);
+    margin-bottom: 1.2em;
+
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(96, 87, 70);
+    display: block;
+    float: left;
+    width: 25%;
 }
