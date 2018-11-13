@@ -14,7 +14,9 @@
 */
 /* This sets up the background gradient */
 html {
-    background: linear-gradient(345deg, rgb(167, 134, 95), rgb(15, 13, 10));
+    background: linear-gradient(315deg, rgb(0, 0, 0), rgb(201, 141, 91), rgb(0, 0, 0),
+        rgb(201, 141, 91),
+        rgb(0, 0, 0), rgb(201, 141, 91), rgb(0, 0, 0), rgb(201, 141, 91), rgb(0, 0, 0));
 }
 
 /* This sets up the font family the sizing and the start of my grid and the color of the text */
@@ -32,11 +34,13 @@ body {
     color: rgb(211, 192, 170);
 }
 
+/* This sets up the grid in the header for the nav and the header picture */
 header {
     grid-template-rows: 90% 10%;
     grid-template-columns: 100%;
 }
 
+/* THis sets up the header picture's margin and width and background */
 #header_pic {
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +49,7 @@ header {
     background: url(br_paper.png);
 }
 
+/* this sets up the top nav and the background color and the size and the border of the nav the radii include finally it includes the box shadow that is used */
 #nav {
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100%;
@@ -61,6 +66,7 @@ header {
     border-bottom-right-radius: 10px;
 }
 
+/* This sets up the spacing and background color of the individual hyperlinks */
 #nav a {
     display: block;
     text-align: center;
@@ -71,6 +77,7 @@ header {
     width: 20%;
 }
 
+/* This sets up the color and background color for all the states of the hyperinks through out the entire site */
 a:link,
 a:visited {
     color: rgb(182, 132, 47);
@@ -86,6 +93,7 @@ a:active {
     background-color: rgb(62, 56, 45);
 }
 
+/* This sets up the text shadow and the the size of the title of the house listing */
 h1 {
     text-align: center;
     font-size: 2em;
@@ -93,6 +101,7 @@ h1 {
     text-shadow: rgb(97, 79, 51) 2px -2px 5px;
 }
 
+/* this sets up the color andthe position of the main section including the rdial gradient in the background */
 section {
     margin-left: auto;
     margin-right: auto;
@@ -102,20 +111,22 @@ section {
         rgb(53, 42, 25), rgb(155, 118, 87));
 }
 
+/* Sets up the grid of the article */
 article {
     grid-template-columns: 80% 20%;
 
 }
 
+/* this sets up the grid for where the picrures are */
 article p {
     float: left;
     grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
 }
 
-aside {
-    float: right;
-}
+/* This sets up the footer in a grid and sets the color and border */
 
 footer {
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -129,6 +140,7 @@ footer {
 
 }
 
+/* This sets up the spaceing and the color and the size of the hyperlinks in the footer */
 footer a {
     display: block;
     text-align: center;
@@ -137,4 +149,50 @@ footer a {
     display: block;
     float: left;
     width: 25%;
+}
+
+/* This sets up the trasformed version of the pictures and make sure that the center is in the foreground  */
+#pic_1 {
+    transform: skewX(30deg) rotateZ(10deg);
+}
+
+#pic_2 {
+    z-index: 1;
+    position: relative;
+}
+
+
+#pic_3 {
+    transform: skewX(-30deg) rotateZ(-10deg);
+}
+
+#pic_4 {
+    transform: skewX(30deg) rotateZ(10deg);
+}
+
+#pic_5 {
+    z-index: 1;
+    position: relative;
+}
+
+#pic_6 {
+    transform: skewX(-30deg) rotateZ(-10deg);
+}
+
+#pic_7 {
+    transform: skewX(30deg) rotateZ(10deg);
+}
+
+#pic_8 {
+    z-index: 1;
+    position: relative;
+}
+
+#pic_9 {
+    transform: skewX(-30deg) rotateZ(-10deg);
+}
+
+/* This saturated the images makeing them more colorful */
+article img {
+    filter: saturate(2)
 }
